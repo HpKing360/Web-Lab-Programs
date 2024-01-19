@@ -103,9 +103,9 @@ exec nam prog-2.nam &
 exit 0
 }
 set x 0.1
-  while {$x < 3} {
-  $ns at $x "$p1 send"
-    set x [expr {$x+0.1}]
+while {$x < 3} {
+$ns at $x "$p1 send"
+set x [expr {$x+0.1}]
 }
 $ns run
 
